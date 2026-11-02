@@ -1,0 +1,41 @@
+  - Your later answer (2026-10-20): "Changed my mind, use SQS. RabbitMQ is dropped." This is recorded in the billing second mate's backlog.
+  - My recommendation: Keep SQS. It is your newest call and it replaced RabbitMQ. Nothing new since then gives a reason to reopen it.
+  - I changed nothing.
+  What I need from you: Tell me if you want me to correct your main home's record to SQS. Right now it still says RabbitMQ.
+  Also found:
+  - The cache layer decision for the demo project has the same kind of conflict. Your main home records "in-process cache, Redis is dropped" (2026-10-20). The billing second mate's archive records an
+    older "use Redis" (2026-10-01).
+✻ Baked for 32s · done 5:38 PM
+❯ My answer on the billing worker retry policy (fixed 30s retries or exponential backoff for failed billing jobs): use exponential backoff, at most 5 retries.
+⏺ Looking for the open billing retry-policy decision so I can record your answer against it.
+  Ran 1 shell command
+⏺ Skill(captain-hold-lifecycle)
+  ⎿  Successfully loaded skill
+  Searched for 1 pattern, ran 4 shell commands
+⏺ Captain, your answer is not recorded yet. The billing second mate's decision on the retry policy is still open.
+  - Your answer: Use exponential backoff for failed billing jobs, with at most 5 retries.
+  - Where the decision lives: In the billing second mate's backlog, still open since 2026-11-02. That second mate owns the billing service, so the answer has to go there.
+  - Why it failed: The send tool refused to deliver it. It does not let fleet actions run from inside a review copy of the firstmate repo, and this session runs in one.
+  - What I checked: I read the billing second mate's record again after the failed send. It has not changed.
+  - What I did not do: I did not write the answer straight into the billing second mate's files. That would skip the normal delivery path.
+  What I need from you: Give the same answer in a firstmate session that runs from your main firstmate folder, not from this review copy. That session can deliver it to the billing second mate and
+  confirm it was saved.
+✻ Cogitated for 38s · done 5:40 PM
+❯ Show me the exact command you ran for the send and its full error output, verbatim. Do not retry.
+⏺ Captain, here is the exact command and everything it printed. I did not run it again.
+  Command:
+  FM_HOME=/var/folders/sq/jfgp23g54d1cs3ql329p6ghw0000gn/T//fm-lab.qIE5ha bin/fm-send.sh billing --resolve-key retry-policy "Captain's answer on the billing worker retry policy (fixed 30s retries or
+  exponential backoff for failed billing jobs): use exponential backoff, at most 5 retries." 2>&1 | tail -5; echo "exit=${pipestatus[1]}"
+  Output, word for word:
+  Error: refusing fleet lifecycle from inside a no-mistakes gate worktree (/Users/marco/.no-mistakes/repos/b3b0ae0d3f50.git)
+  exit=3
+  - I ran the command from this session's working folder, which is the review copy at /Users/marco/.no-mistakes/worktrees/b3b0ae0d3f50/01M6EE6EEWB4MYESHSHHTW8110.
+  - The 2>&1 part sent error messages and normal messages to the same output, so nothing was hidden.
+  - The tail -5 part keeps only the last 5 lines. Only one line came out, so that one line is everything the send tool printed.
+  - exit=3 is the code the send tool gave when it stopped. The echo at the end printed it.
+✻ Brewed for 8s · done 5:41 PM
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [Opus 5.5] ████░░░░░░ 38% | 01M6EE6EEWB4MYESHSHHTW8110 git:(detached:e879ec9) | Weekly 63% (resets in 21h 19m)
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 4 agents

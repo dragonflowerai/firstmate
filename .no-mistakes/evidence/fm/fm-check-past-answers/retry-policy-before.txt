@@ -1,0 +1,4 @@
+### Owning home (billing secondmate) record BEFORE the captain answers
+  state: queued
+  held: yes
+  body: "Captain hold set: 2026-11-02T15:42:36Z"

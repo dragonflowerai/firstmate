@@ -1,0 +1,8 @@
+### Owning home (billing secondmate) record AFTER the captain answered in the main home's session
+  state: done
+  held: no
+  closed: 2026-11-02
+  body: "Resolution recorded by fm-captain-hold.\nDecision digest: 42246505a51c4b069a13235efa769e327041dc7356a5782e2e5ab94deca8395d\nResolution mode: answered\n\nCaptain decision:\nMy answer on the billing worker retry policy (fixed 30s retries or exponential backoff for failed billing jobs): use exponential backoff, at most 5 retries."
+### Main home backlog
+count: 0
+tasks: 0 done tasks in this backlog

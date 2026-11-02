@@ -1,0 +1,24 @@
+### SM home with done_keep=1 after two newer tasks closed
+$ bin/fm-tasks-axi.sh list --state done
+count: 1
+tasks[1]{id,state,kind,repo,title}:
+  filler-2,done,task,demo,Filler 2
+help[1]:
+  - Run `tasks-axi show <id>` for full notes on a task
+$ bin/fm-tasks-axi.sh show cache-layer --full
+error: "Task \"cache-layer\" not found in this backlog"
+code: NOT_FOUND
+help[1]: Run `tasks-axi list` to see existing tasks
+exit=1
+$ rg -n cache-layer -A8 data/done-archive.md
+3:- [x] cache-layer - Pick cache layer (repo: demo) (kind: captain) (done 2026-11-02) (hold: fm-hold-v1:Q2FwdGFpbiBjYWxsOiBSZWRpcyBvciBpbi1wcm9jZXNzIGNhY2hlPw==) (hold-kind: captain)
+4-  Resolution recorded by fm-captain-hold.
+5-  Decision digest: db60003e773ef712151bdfaaf913c9f4097b1640d21e38ffeea982646d22556a
+6-  Resolution mode: answered
+7-
+8-  Captain decision:
+9-  Captain (2026-10-01): use Redis.
+10-
+11-
+12-## Archived 2026-11-02
+13-- [x] filler-1 - Filler 1 (repo: demo) (done 2026-11-02)
